@@ -11,6 +11,10 @@ redis_cli = None
 
 logger = logging.getLogger()
 
+@app.route("/healthcheck")
+def healthcheck():
+    return 'WORKING'
+
 @app.route("/")
 def index():
     index = """
