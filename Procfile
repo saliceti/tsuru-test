@@ -1,0 +1,1 @@
+web: python tsuru-test.py $PORT
